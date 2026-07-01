@@ -1,17 +1,29 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useRef } from 'react'
 
 export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  function handleEnded() {
+    const video = videoRef.current
+    if (video) {
+      video.currentTime = 0
+      video.play()
+    }
+  }
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <video
+        ref={videoRef}
         src="/restaurant_main.mp4"
         autoPlay
-        loop
         muted
         playsInline
         poster="/hero.png"
+        onEnded={handleEnded}
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/40" />
