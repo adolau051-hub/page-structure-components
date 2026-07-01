@@ -42,7 +42,7 @@ export default function StaffLoginPage() {
       <div className="w-full max-w-sm">
         <div className="bg-card rounded-lg shadow-lg p-8 border border-border">
           <h1 className="text-3xl font-serif font-bold text-center mb-2 text-foreground">
-            Lumière Bistro
+            Riverstone Kitchen
           </h1>
           <p className="text-center text-muted-foreground mb-8 font-semibold">Staff Portal</p>
 

@@ -5,19 +5,19 @@ import { setupStaffAccount } from '@/lib/setup-staff'
  * POST /api/setup/demo
  * Initialize demo account for testing
  * Demo Credentials:
- * Username: admin@lumiere-bistro.co.uk
+ * Username: admin@riverstone-kitchen.co.uk
  * Password: Demo123!
  */
 export async function POST(request: NextRequest) {
   try {
     const result = await setupStaffAccount(
       'Demo123!',
-      'admin@lumiere-bistro.co.uk'
+      'admin@riverstone-kitchen.co.uk'
     )
     return NextResponse.json({
       ...result,
       credentials: {
-        username: 'admin@lumiere-bistro.co.uk',
+        username: 'admin@riverstone-kitchen.co.uk',
         password: 'Demo123!',
       },
     })

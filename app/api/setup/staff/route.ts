@@ -7,12 +7,12 @@ import { setupStaffAccount } from '@/lib/setup-staff'
  * Request body: { password: string, username?: string }
  * 
  * Demo Credentials:
- * Username: admin@lumiere-bistro.co.uk
+ * Username: admin@riverstone-kitchen.co.uk
  * Password: Demo123!
  */
 export async function POST(request: NextRequest) {
   try {
-    const { password, username = 'admin@lumiere-bistro.co.uk' } = await request.json()
+    const { password, username = 'admin@riverstone-kitchen.co.uk' } = await request.json()
 
     if (!password) {
       return NextResponse.json(

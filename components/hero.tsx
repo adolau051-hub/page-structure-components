@@ -1,17 +1,18 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 export function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <Image
-        src="/hero.png"
-        alt="Lumière Bistro Interior"
-        fill
-        className="object-cover"
-        priority
+      <video
+        src="/hero_video.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/hero.png"
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/40" />
 
@@ -22,7 +23,7 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-serif font-bold mb-6 text-balance"
         >
-          Lumière Bistro
+          Riverstone Kitchen
         </motion.h1>
 
         <motion.p

@@ -24,7 +24,7 @@ export async function sendBookingConfirmation(
 
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-      <h2 style="color: #8b6f47;">Your Reservation at Lumière Bistro</h2>
+      <h2 style="color: #8b6f47;">Your Reservation at Riverstone Kitchen</h2>
       <p>Dear ${bookingDetails.name},</p>
       <p>Thank you for booking with us. Your reservation details are below:</p>
       
@@ -38,14 +38,14 @@ export async function sendBookingConfirmation(
       <p>If you need to cancel or modify your reservation, please <a href="${cancelUrl}" style="color: #8b6f47;">click here</a>.</p>
       
       <p>We look forward to welcoming you!</p>
-      <p>Warm regards,<br/>The Lumière Bistro Team</p>
+      <p>Warm regards,<br/>The Riverstone Kitchen Team</p>
     </div>
   `
 
   return transporter.sendMail({
     from: process.env.SMTP_FROM,
     to,
-    subject: 'Your Lumière Bistro Reservation Confirmed',
+    subject: 'Your Riverstone Kitchen Reservation Confirmed',
     html,
   })
 }
@@ -62,7 +62,7 @@ export async function sendReminderEmail(
 ) {
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-      <h2 style="color: #8b6f47;">Reminder: Your Lumière Bistro Reservation Tomorrow</h2>
+      <h2 style="color: #8b6f47;">Reminder: Your Riverstone Kitchen Reservation Tomorrow</h2>
       <p>Dear ${bookingDetails.name},</p>
       <p>This is a friendly reminder about your upcoming reservation:</p>
       
@@ -73,14 +73,14 @@ export async function sendReminderEmail(
       </div>
 
       <p>We look forward to seeing you!</p>
-      <p>Warm regards,<br/>The Lumière Bistro Team</p>
+      <p>Warm regards,<br/>The Riverstone Kitchen Team</p>
     </div>
   `
 
   return transporter.sendMail({
     from: process.env.SMTP_FROM,
     to,
-    subject: 'Reminder: Your Lumière Bistro Reservation',
+    subject: 'Reminder: Your Riverstone Kitchen Reservation',
     html,
   })
 }
@@ -101,7 +101,7 @@ export async function sendStaffNotification(
 ) {
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-      <h2 style="color: #8b6f47;">New Booking - Lumière Bistro</h2>
+      <h2 style="color: #8b6f47;">New Booking - Riverstone Kitchen</h2>
       
       <div style="background: #f3ede5; padding: 20px; border-radius: 8px; margin: 20px 0;">
         <p><strong>Customer:</strong> ${bookingDetails.customerName}</p>

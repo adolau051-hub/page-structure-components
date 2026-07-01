@@ -85,7 +85,7 @@ export default function AdminDashboardPage() {
       <header className="bg-card border-b border-border sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-serif font-bold text-foreground">
-            Lumière Bistro - Bookings
+            Riverstone Kitchen - Bookings
           </h1>
           <button
             onClick={handleLogout}

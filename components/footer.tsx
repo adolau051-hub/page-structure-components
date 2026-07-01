@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-serif font-bold mb-4 text-foreground">Lumière Bistro</h3>
+            <h3 className="text-xl font-serif font-bold mb-4 text-foreground">Riverstone Kitchen</h3>
             <p className="text-muted-foreground">
               Experience fine dining in an intimate, welcoming atmosphere.
             </p>
@@ -28,7 +28,7 @@ export function Footer() {
             <p className="text-muted-foreground">
               Phone: +44 (0)20 1234 5678
               <br />
-              Email: hello@lumiere-bistro.co.uk
+              Email: hello@riverstone-kitchen.co.uk
               <br />
               123 Marylebone Lane, London W1U 2QF
             </p>
@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-input pt-8 text-center text-muted-foreground">
-          <p>&copy; 2026 Lumière Bistro. All rights reserved.</p>
+          <p>&copy; 2026 Riverstone Kitchen. All rights reserved.</p>
         </div>
       </div>
     </footer>

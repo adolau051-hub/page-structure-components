@@ -11,8 +11,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Lumière Bistro - Fine Dining Reservations',
-  description: 'Experience exceptional cuisine and warm hospitality at Lumière Bistro. Book your table for an unforgettable evening.',
+  title: 'Riverstone Kitchen - Fine Dining Reservations',
+  description: 'Experience exceptional cuisine and warm hospitality at Riverstone Kitchen. Book your table for an unforgettable evening.',
   generator: 'v0.app',
   icons: {
     icon: [

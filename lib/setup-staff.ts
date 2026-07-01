@@ -5,7 +5,7 @@ import * as bcrypt from 'bcryptjs'
  * Initialize staff account with a password and username.
  * Call this once during setup or when resetting staff credentials.
  */
-export async function setupStaffAccount(password: string, username: string = 'admin@lumiere-bistro.co.uk') {
+export async function setupStaffAccount(password: string, username: string = 'admin@riverstone-kitchen.co.uk') {
   try {
     if (!password || password.length < 8) {
       throw new Error('Password must be at least 8 characters long')

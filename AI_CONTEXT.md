@@ -2,8 +2,6 @@
 
 Task 1: Change the restaurant name from 'Lumière Bistro' to 'Riverstone Kitchen'. Ensure all necessary file names, folder names are changed aswell.
 
-Task 2: In the hero section/ header depending on what it's called on your end, change the image into a video (That you generated. Keep a lively, warm and welcoming vibe, no text in the video please, the video must be looped over itself. You could but not limited to a seanaramic pan shot). This is to make the website feel more alive and less static. 
-
 Task 3: Add a 'About us' section to the website. You may use the address '123 Marylebone Lane, London W1U 2QF' and for the rest of the information you can generate it yourself. Keep it realistic like it is a real restaurant.
 
 Task 4: Add prices to the menu. It MUST always be in GBP (£) 

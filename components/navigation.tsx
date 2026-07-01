@@ -31,7 +31,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-serif font-bold text-primary">
-            Lumière Bistro
+            Riverstone Kitchen
           </div>
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
