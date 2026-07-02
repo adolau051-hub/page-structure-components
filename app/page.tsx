@@ -4,7 +4,6 @@ import { Menu } from '@/components/menu'
 import { BookingForm } from '@/components/booking-form'
 import { Footer } from '@/components/footer'
 import { Navigation } from '@/components/navigation'
-import { AdminPortal } from '@/components/admin-portal'
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
         <BookingForm />
       </div>
       <Footer />
-      <AdminPortal />
     </main>
   )
 }
