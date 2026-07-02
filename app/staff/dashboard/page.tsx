@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { LogOut, Calendar, Clock, Users, Mail, Phone, Loader, UtensilsCrossed } from 'lucide-react'
+import { LogOut, Calendar, Clock, Users, Mail, Phone, Loader, UtensilsCrossed, Video } from 'lucide-react'
 import { Footer } from '@/components/footer'
 
 interface Booking {
@@ -128,13 +128,22 @@ export default function StaffDashboardPage() {
                 Manage reservations at Riverstone Kitchen
               </p>
             </div>
-            <button
-              onClick={handleLogout}
-              className="inline-flex items-center gap-2 bg-card border border-border hover:bg-muted text-foreground px-4 py-2 rounded-lg font-semibold transition-colors"
-            >
-              <LogOut size={18} />
-              Log Out
-            </button>
+            <div className="flex items-center gap-3">
+              <a
+                href="/staff/upload-video"
+                className="inline-flex items-center gap-2 bg-card border border-border hover:bg-muted text-foreground px-4 py-2 rounded-lg font-semibold transition-colors"
+              >
+                <Video size={18} />
+                Hero Video
+              </a>
+              <button
+                onClick={handleLogout}
+                className="inline-flex items-center gap-2 bg-card border border-border hover:bg-muted text-foreground px-4 py-2 rounded-lg font-semibold transition-colors"
+              >
+                <LogOut size={18} />
+                Log Out
+              </button>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
