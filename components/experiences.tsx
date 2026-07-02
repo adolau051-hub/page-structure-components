@@ -30,7 +30,7 @@ const experiences = [
     name: 'Walk-In Dining',
     price: 0,
     description: 'Casual walk-ins welcome - dine à la carte from our full menu',
-    image: '/hearth-table.png',
+    image: '/walk-in-dining.png',
   },
 ]
 
@@ -61,13 +61,13 @@ export function Experiences() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="relative h-72 mb-6 overflow-hidden rounded-lg">
+              <div className="relative w-full aspect-video mb-6 overflow-hidden rounded-lg">
                 <Image
                   src={exp.image}
                   alt={exp.name}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                  priority={index === 0}
               </div>
               <h3 className="text-2xl font-serif font-bold text-foreground mb-2">
                 {exp.name}
