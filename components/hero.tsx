@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
+import { HERO_VIDEO_URL } from '@/lib/hero-video'
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -18,7 +19,7 @@ export function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <video
         ref={videoRef}
-        src="/restaurant_main.mp4"
+        src={HERO_VIDEO_URL}
         autoPlay
         muted
         playsInline
