@@ -68,6 +68,7 @@ export function Experiences() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   priority={index === 0}
+                />
               </div>
               <h3 className="text-2xl font-serif font-bold text-foreground mb-2">
                 {exp.name}
