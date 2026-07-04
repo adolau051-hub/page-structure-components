@@ -53,7 +53,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           href="#booking"
-          className="inline-block bg-primary hover:bg-secondary text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+          className="inline-block bg-accent hover:bg-primary text-white px-10 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 hover:shadow-xl shadow-lg"
         >
           Book Your Table
         </motion.a>

@@ -2,6 +2,7 @@ import { Hero } from '@/components/hero'
 import { Experiences } from '@/components/experiences'
 import { Menu } from '@/components/menu'
 import { BookingForm } from '@/components/booking-form'
+import { VisitUs } from '@/components/visit-us'
 import { Footer } from '@/components/footer'
 import { Navigation } from '@/components/navigation'
 import { AdminPortal } from '@/components/admin-portal'
@@ -21,6 +22,9 @@ export default function Home() {
       </div>
       <div id="booking">
         <BookingForm />
+      </div>
+      <div id="visit">
+        <VisitUs />
       </div>
       <Footer />
       <AdminPortal />
