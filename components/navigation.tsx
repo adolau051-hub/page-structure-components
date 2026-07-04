@@ -7,7 +7,7 @@ import { Menu, X, UtensilsCrossed } from 'lucide-react'
 const navLinks = [
   { href: '#home', label: 'Home' },
   { href: '#experiences', label: 'Experiences' },
-  { href: '#menu', label: 'Menu' },
+  { href: '/menu', label: 'Menu' },
   { href: '#booking', label: 'Reserve' },
 ]
 
@@ -53,20 +53,20 @@ export function Navigation() {
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
+              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors relative group py-2"
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
           <a
             href="#booking"
-            className="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors"
+            className="bg-primary hover:bg-secondary text-primary-foreground hover:text-secondary-foreground px-7 py-3 rounded-lg text-base font-semibold transition-colors"
           >
             Book a Table
           </a>
