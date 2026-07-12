@@ -38,6 +38,12 @@ const menuItems = {
       description: 'Exquisite Wagyu ribeye steak paired with a rich truffle jus and creamy spinach.',
       image: '/images/menu/wagyu-ribeye.png',
     },
+    {
+      name: 'Roasted Rack of Lamb',
+      price: 38,
+      description: 'Herb-crusted rack of lamb served with roasted root vegetables and red wine reduction.',
+      image: '/images/menu/rack-of-lamb.png',
+    },
   ],
   desserts: [
     {
