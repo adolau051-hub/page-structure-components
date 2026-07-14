@@ -1,11 +1,18 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useRef } from 'react'
-import { HERO_VIDEO_URL } from '@/lib/hero-video'
+import { useRef, useState } from 'react'
+import { HERO_VIDEO_URL, FALLBACK_VIDEO_URL } from '@/lib/hero-video'
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [src, setSrc] = useState(HERO_VIDEO_URL)
+
+  function handleError() {
+    if (src !== FALLBACK_VIDEO_URL) {
+      setSrc(FALLBACK_VIDEO_URL)
+    }
+  }
 
   function handleEnded() {
     const video = videoRef.current
@@ -18,13 +25,15 @@ export function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <video
+        key={src}
         ref={videoRef}
-        src={HERO_VIDEO_URL}
+        src={src}
         autoPlay
         muted
         playsInline
         poster="/hero.png"
         onEnded={handleEnded}
+        onError={handleError}
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/40" />

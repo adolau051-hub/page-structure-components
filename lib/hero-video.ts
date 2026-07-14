@@ -5,3 +5,4 @@ const OBJECT = 'hero.mp4'
 export const HERO_VIDEO_URL = SUPABASE_URL
   ? `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${OBJECT}`
   : '/restaurant_main.mp4'
+export const FALLBACK_VIDEO_URL = '/restaurant_main.mp4'
