@@ -54,12 +54,12 @@ export function Navigation() {
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors relative group px-4 py-2 rounded-lg hover:bg-primary/5"
+              className="text-[17px] font-medium text-foreground/80 hover:text-primary transition-colors relative group px-5 py-2.5 rounded-lg hover:bg-primary/5"
             >
               {link.label}
               <span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4" />
@@ -67,7 +67,7 @@ export function Navigation() {
           ))}
           <a
             href="#booking"
-            className="bg-primary hover:bg-secondary text-white px-6 py-2.5 rounded-lg text-base font-semibold transition-all hover:scale-105 hover:shadow-md ml-2"
+            className="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:scale-105 hover:shadow-lg ml-2"
           >
             Book a Table
           </a>
